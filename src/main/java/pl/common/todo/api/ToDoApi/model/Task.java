@@ -2,23 +2,30 @@ package pl.common.todo.api.ToDoApi.model;
 
 import java.util.Date;
 
-public class Task {
-	
-	private Integer id;
-	
-	private String name;
-	
-	private Date deadline;
-	
-	private Date insertionDate;
-	
-	private Date updateDate;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
-	public Integer getId() {
+@Entity
+public class Task {
+
+	@Id
+	@GeneratedValue
+	private Long id;
+
+	private String name;
+
+	private Date deadline;
+
+	private Date insertionDate = new Date();
+
+	private Date updateDate = new Date();
+
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
