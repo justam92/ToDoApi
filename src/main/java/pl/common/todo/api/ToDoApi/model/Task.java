@@ -17,9 +17,9 @@ public class Task {
 
 	private Date deadline;
 
-	private Date insertionDate = new Date();
+	private Date insertionDate;
 
-	private Date updateDate = new Date();
+	private Date updateDate;
 
 	public Long getId() {
 		return id;
