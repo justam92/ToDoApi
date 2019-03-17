@@ -12,5 +12,5 @@ public interface TaskService {
 	
 	void create(Task task);
 	
-	void updateById(Task task);
+	void update(Task task);
 }

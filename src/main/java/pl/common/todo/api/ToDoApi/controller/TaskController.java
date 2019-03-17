@@ -38,7 +38,7 @@ public class TaskController {
 	}
 	
 	@PutMapping
-	public void updateById(@RequestBody Task task) {
-		taskService.updateById(task);
+	public void update(@RequestBody Task task) {
+		taskService.update(task);
 	}
 }
