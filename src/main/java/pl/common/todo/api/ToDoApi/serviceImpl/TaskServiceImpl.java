@@ -43,4 +43,15 @@ public class TaskServiceImpl implements TaskService {
 		task.setInsertionDate(new Date());
 		taskRepository.save(task);
 	}
+
+	@Override
+	public void update(Task task) {
+		
+		Task oldTask = taskRepository.findById(task.getId()).get();
+		task.setUpdateDate(new Date());
+		task.setInsertionDate(oldTask.getInsertionDate());
+		
+		taskRepository.save(task);
+	}
+
 }
