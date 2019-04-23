@@ -1,6 +1,13 @@
 # ToDoApi
 Back-End for To-Do Aplication
 
+# Technologies
+ * Java
+ * Spring Boot
+ * Hibernate
+ * MySQL
+ * AWS (EC2, RDS)
+
 # API
 
 ### Task
